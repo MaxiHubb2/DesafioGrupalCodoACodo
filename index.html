@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Time</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  
+ </head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="/assets/sushi logo.png" alt="Sushi Logo"> <span class="sushi-text">Sushi</span>
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="#sushi">Sushi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section id="home" class="titulo">
+            <div class="menu-item">
+                <h1>Disfruta de nuestro menú</h1>
+                <p>Bienvenido a Sushi Time, donde puedes disfrutar de una amplia variedad de sushi delicioso.</p>
+                <button>Ordena aquí</button>
+            </div>
+            <section class="sushi-roll">
+                <img src="/assets/home-sushi-rolls.png" alt="sushi-rolls">
+            </section>
+        </section>
+        
+    
+        <section id="sushi" class="titulo-sushi">
+            <div class="menu-item-sushi">
+                <h1>Mira nuestra carta</h1>
+                <p>Disfruta de una amplia variedad de deliciosos rolls y nigiris preparados con los ingredientes más frescos y sabrosos. Nuestros maestros sushi chefs están listos para satisfacer tus antojos de sushi en cualquier momento del día.</p>
+            </div>
+            <section class="sushis">
+                <div class="card">
+                    <img src="/assets/popular-onigiri.png" alt="Onigiri">
+                    <div class="details">
+                        <h3>Onigiri</h3>
+                        <p>Plato japonés</p>
+                        <p>$ 950</p>
+                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/popular-spring-rols.png" alt="Spring Rolls">
+                    <div class="details">
+                        <h3>Spring Rolls</h3>
+                        <p>Plato japonés</p>
+                        <p>$ 950</p>
+                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/popular-sushi-rolls.png" alt="Sushi Rolls">
+                    <div class="details">
+                        <h3>Sushi Rolls</h3>
+                        <p>Plato japonés</p>
+                        <p>$ 950</p>
+                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="formulario-contacto">
+                <form id="contacto" action="/mensajeRecibido.html" method="get" enctype="multipart/form-data">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="/assets/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/assets/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/assets/Twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+ 
+
+</body>
+
+<script src="/js/script.js"></script>
+
+
+</html>

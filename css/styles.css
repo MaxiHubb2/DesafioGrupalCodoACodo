@@ -1,0 +1,326 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(8 8 8 / 100%);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    align-items: center; 
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family:  "Lora", serif;
+}
+
+.titulo h1,
+.titulo h2 {
+    margin: 0 0 10px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.menu ul li {
+    margin-left: 20px; 
+}
+
+.menu ul li:first-child {
+    margin-left: 0; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 55px; 
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.header .sushi-text:hover {
+    transition: color 0.3s; 
+    color: #ffd700; 
+
+}
+
+.menu {
+    padding: 10px 0;
+    text-align: center;    
+}
+
+main{
+    padding-bottom: 5rem;
+}
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+}
+
+.menu-item img {
+    width: 200px; 
+    margin-bottom: 10px; 
+}
+
+.menu-item button {
+    padding: 15px 30px; 
+    background-color: #000; 
+    border: none;
+    color: #fff;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+
+/* Estilos para los botones en estado hover */
+.menu-item button:hover {
+    background-color: #333; 
+}
+
+
+#home{
+    background-image: url(/assets/leaf-branch-2.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 0rem 1rem;
+}
+
+#sushi{
+    background-image: url(/assets/leaf-branch-4.png);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    background-position: right;
+}
+
+#contacto{
+    background-image: url(/assets/leaf-branch-1.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: right;
+}
+
+.sushi-roll img {
+    max-width: 100%; 
+}
+
+/* sushiss*/
+
+.titulo-sushi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 11rem; 
+    text-align: center;
+}
+
+.sushis {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+
+/* Estilo por defecto para las cartas */
+.card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.5s ease; 
+
+}
+
+/* Efecto de animación al pasar de una carta a otra */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h3 {
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+}
+
+.details button:hover {
+    background-color: #213841;
+}
+
+/* Estilo por defecto para los enlaces */
+
+
+/* Estilo para el enlace de Sushi */
+.menu ul li a[href="#sushi"] {
+    color: #fff; 
+}
+
+/* Estilo para el enlace de Contacto */
+.menu ul li a[href="#contacto"] {
+    color: #fff;
+}
+
+/* Ajusta los estilos para cuando el enlace es seleccionado */
+.menu ul li a.selected {
+    color: #ffd700; 
+}
+
+
+
+ /* Estilos para la sección de contacto */
+ #contacto {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.formulario-contacto textarea {
+    height: 150px;
+}
+
+.formulario-contacto button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+    background-color: #555;
+}
+
+
+/* redes */
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #0f0f0f;
+    padding: 1rem;
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu ul {
+        display: none;
+    }
+
+    .menu .menu-icon {
+        display: block;
+    }
+
+    .menu.open ul {
+        display: block;
+    }
+}
