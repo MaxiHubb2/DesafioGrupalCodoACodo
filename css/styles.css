@@ -29,7 +29,7 @@ body {
     margin-top: 150px;
     padding: 20px;
     margin-bottom: 20px;
-    font-family:  "Lora", serif;
+    font-family:  "Lora", sans-serif;
 }
 
 .titulo h1,
@@ -42,6 +42,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .logo img {
@@ -205,10 +206,9 @@ main{
 }
 
 .details button:hover {
-    background-color: #213841;
+    background-color: #71d154;
 }
 
-/* Estilo por defecto para los enlaces */
 
 
 /* Estilo para el enlace de Sushi */
@@ -221,12 +221,14 @@ main{
     color: #fff;
 }
 
-/* Ajusta los estilos para cuando el enlace es seleccionado */
 .menu ul li a.selected {
     color: #ffd700; 
 }
 
-
+.menu-items {
+    display: none; 
+    text-align: center; 
+}
 
  /* Estilos para la sección de contacto */
  #contacto {
@@ -239,6 +241,7 @@ main{
     color: #333;
     font-size: 2rem;
     margin-bottom: 20px;
+    margin-top: 1rem;
 }
 
 .formulario-contacto {
@@ -282,6 +285,22 @@ main{
     background-color: #555;
 }
 
+/*estilo de flecha */
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 /* redes */
 
@@ -311,16 +330,202 @@ footer{
 
 }
 
+/* Estilos para las modalidades de pantalla */
+
 @media screen and (max-width: 768px) {
-    .menu ul {
-        display: none;
+    #home{
+        background-position: 0rem 8rem;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        
     }
 
-    .menu .menu-icon {
-        display: block;
+    .titulo{
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+
+    }
+
+    div.menu-item{
+        font-family: sans-serif;
+    }
+
+    .menu-item {
+        text-align: center;
+    }
+
+    .sushi-roll img{
+        width: 70%;
+    }
+
+    .titulo-sushi {
+        padding: 4rem 2rem; 
+        align-items: center;
+    }
+
+    .sushis {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 60%; 
+    }
+
+   
+    .details button{
+        padding: 0px;
+        width: 20%;
+    }
+
+    .logo, .menu {
+        text-align: center;
+        order: 0;
+        cursor: pointer;
+    }
+
+    .menu ul {
+        display: none;
+        padding: 0;
+        margin: 20px 0 0;
     }
 
     .menu.open ul {
         display: block;
     }
+
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .push-down {
+        transform: translateY(150px);
+        transition: transform 0.3s ease;
+    }
+
+    .menu ul.open {
+        display: block;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+ 
+    #home {
+        background-position: 0rem 6rem;
+        background-size: 11rem;
+
+    }
+
+    #sushi{
+        background-size: 3rem;
+    }
+
+    #contacto{
+        margin-top: 2rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .titulo {
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+    }
+
+    div.menu-item {
+        font-family: sans-serif;
+    }
+
+    .menu-item {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .menu-item button{
+        font-size: 1rem;
+    }
+
+    .sushi-roll img {
+        width: 57%;
+    }
+
+    .sushis{
+        justify-content: center;
+    }
+
+    .titulo-sushi {
+        padding: 4rem 2rem;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    div.menu-item-sushi p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .card {
+        width: 30%;
+    }
+
+    .details button {
+        padding: 0px;
+        width: 20%;
+    }
+
+    .logo,
+    .menu {
+        text-align: center;
+        order: 0;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .logo img{
+        width: 3rem;
+    }
+
+    .menu ul {
+        display: none;
+        padding: 0;
+        margin: 20px 0 0;
+    }
+
+    .menu.open ul {
+        display: block;
+    }
+
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .push-down {
+        transform: translateY(210px);
+        transition: transform 0.3s ease;
+    }
+
+    .menu ul.open {
+        display: block;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
+
+    #contacto h2{
+        font-size: x-large;
+    }
+}
+
