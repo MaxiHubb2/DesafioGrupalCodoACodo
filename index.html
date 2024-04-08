@@ -7,8 +7,7 @@
     <title>Sushi Time</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-  
- </head>
+</head>
 
 <body>
     <header class="header">
@@ -22,13 +21,11 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        
     </header>
-    
     <main>
         <section id="home" class="titulo">
             <div class="menu-item">
-                <h1>Disfruta de nuestro menú</h1>
+                <h2>Disfruta de nuestro menú</h2>
                 <p>Bienvenido a Sushi Time, donde puedes disfrutar de una amplia variedad de sushi delicioso.</p>
                 <button>Ordena aquí</button>
             </div>
@@ -36,11 +33,10 @@
                 <img src="/assets/home-sushi-rolls.png" alt="sushi-rolls">
             </section>
         </section>
-        
-    
+
         <section id="sushi" class="titulo-sushi">
             <div class="menu-item-sushi">
-                <h1>Mira nuestra carta</h1>
+                <h2>Mira nuestra carta</h2>
                 <p>Disfruta de una amplia variedad de deliciosos rolls y nigiris preparados con los ingredientes más frescos y sabrosos. Nuestros maestros sushi chefs están listos para satisfacer tus antojos de sushi en cualquier momento del día.</p>
             </div>
             <section class="sushis">
@@ -59,7 +55,7 @@
                         <h3>Spring Rolls</h3>
                         <p>Plato japonés</p>
                         <p>$ 950</p>
-                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                        <button><img src="/assets/carrito-de-compras.png" alt="carrito"></i></button>
                     </div>
                 </div>
                 <div class="card">
@@ -68,29 +64,21 @@
                         <h3>Sushi Rolls</h3>
                         <p>Plato japonés</p>
                         <p>$ 950</p>
-                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                        <button><img src="/assets/carrito-de-compras.png" alt="carrito"></i></button>
                     </div>
                 </div>
             </section>
         </section>
-        
-        
-        </section>
-
         <section id="contacto">
             <h2>Contacto</h2>
-            <div class="formulario-contacto">
-                <form id="contacto" action="/mensajeRecibido.html" method="get" enctype="multipart/form-data">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
+            <form id="contacto-form" class="formulario-contacto" action="/mensajeRecibido.html" method="get" enctype="multipart/form-data">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
         </section>
-    
     </main>
-
     <footer>
         <div class="redes-sociales">
             <a href="#"><img src="/assets/Facebook.png" alt="Facebook"></a>
@@ -98,11 +86,6 @@
             <a href="#"><img src="/assets/Twitter.png" alt="Twitter"></a>
         </div>
     </footer>
- 
-
 </body>
-
 <script src="/js/script.js"></script>
-
-
 </html>
