@@ -1,21 +1,26 @@
-body {
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
- 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: rgb(8 8 8 / 100%);
     color: #fff;
-    position: fixed;
     width: 100%;
+    position: sticky;
     top: 0;
-    left: 0;
     z-index: 2;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); 
 }
@@ -26,15 +31,13 @@ body {
     gap: 10px; 
     align-items: center; 
     text-align: center;
-    margin-top: 150px;
-    padding: 20px;
+    padding: 150px 20px 0 20px;
     margin-bottom: 20px;
     font-family:  "Lora", sans-serif;
 }
 
-.titulo h1,
-.titulo h2 {
-    margin: 0 0 10px; 
+h2 {
+    padding: 15px; 
 }
 
 .logo {
@@ -47,60 +50,38 @@ body {
 
 .logo img {
     width: 40px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: flex-end; 
-}
-
-.menu ul li {
-    margin-left: 20px; 
-}
-
-.menu ul li:first-child {
-    margin-left: 0; 
+    justify-content: flex-end;
+    gap: 5rem; 
 }
 
 .menu ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 55px; 
     border-radius: 20px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-
 .header .sushi-text:hover {
     transition: color 0.3s; 
     color: #ffd700; 
-
 }
-
-.menu {
-    padding: 10px 0;
-    text-align: center;    
-}
-
-main{
-    padding-bottom: 5rem;
-}
-
 
 .menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left; 
+    text-align: left;
+    gap: 1rem; 
 }
 
 .menu-item img {
     width: 200px; 
-    margin-bottom: 10px; 
 }
 
 .menu-item button {
@@ -119,12 +100,15 @@ main{
     background-color: #333; 
 }
 
+main {
+    width: 100%;
+}
 
 #home{
     background-image: url(/assets/leaf-branch-2.png);
     background-repeat: no-repeat;
     background-size: 15%;
-    background-position: 0rem 1rem;
+    background-position: 0rem 5rem;
 }
 
 #sushi{
@@ -150,17 +134,22 @@ main{
 .titulo-sushi {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 4rem 11rem; 
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 10rem; 
     text-align: center;
+}
+
+.menu-item-sushi p {
+    padding-bottom: 2rem;
 }
 
 .sushis {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap; 
-    gap: 20px; 
+    gap: 1.5rem 
 }
-
 
 /* Estilo por defecto para las cartas */
 .card {
@@ -170,7 +159,6 @@ main{
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, opacity 0.5s ease; 
-
 }
 
 /* Efecto de animación al pasar de una carta a otra */
@@ -245,22 +233,21 @@ main{
 }
 
 .formulario-contacto {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 600px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .formulario-contacto input,
 .formulario-contacto textarea {
-    width: 100%;
-    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -303,14 +290,16 @@ main{
 
 
 /* redes */
-
-.redes-sociales {
-    text-align: center;
-    margin-top: 50px;
+footer {
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 2rem 1rem;
 }
 
-.redes-sociales a {
-    margin: 0 10px;
+.redes-sociales {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .redes-sociales img {

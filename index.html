@@ -24,7 +24,6 @@
             </ul>
         </div>
     </header>
-    
     <main>
         <section id="home" class="titulo">
             <div class="menu-item" >
@@ -36,8 +35,7 @@
                 <img src="/assets/home-sushi-rolls.png" alt="sushi-rolls">
             </section>
         </section>
-        
-    
+
         <section id="sushi" class="titulo-sushi">
             <div class="menu-item-sushi">
                 <h1>Nuestra Carta</h1>
@@ -59,7 +57,7 @@
                         <h3>Spring Rolls</h3>
                         <p>Plato japonés</p>
                         <p>$ 950</p>
-                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                        <button><img src="/assets/carrito-de-compras.png" alt="carrito"></i></button>
                     </div>
                 </div>
                 <div class="card">
@@ -68,27 +66,20 @@
                         <h3>Sushi Rolls</h3>
                         <p>Plato japonés</p>
                         <p>$ 950</p>
-                        <button><img src="/assets/carrito-de-compras.png" alt=""></i></button>
+                        <button><img src="/assets/carrito-de-compras.png" alt="carrito"></i></button>
                     </div>
                 </div>
             </section>
         </section>
-        
-        
-        </section>
-
         <section id="contacto">
             <h2>Contacto</h2>
-            <div class="formulario-contacto">
-                <form id="contacto" action="/mensajeRecibido.html" method="get" enctype="multipart/form-data">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
+            <form id="contacto-form" class="formulario-contacto" action="/mensajeRecibido.html" method="get" enctype="multipart/form-data">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
         </section>
-    
     </main>
     
     <div id="scroll-top" class="scroll-top">&#8593;</div>
